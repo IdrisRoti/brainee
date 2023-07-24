@@ -1,0 +1,45 @@
+.cat {
+    padding: 1rem;
+    background: var(--secondary-color);
+    height: 100vh;
+    overflow: auto;
+}
+
+.cat-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.cat .top {
+    height: 10vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.cat .top .back {
+    margin-right: .6rem;
+    width: 30px;
+    height: 30px;
+    transition: 300ms all ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.cat .top .back:hover {
+    color: var(--secondary-color);
+    background: #fff;
+}
+
+.cat .bottom {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 1rem 1rem 0 0;
+    min-height: 90vh;
+}

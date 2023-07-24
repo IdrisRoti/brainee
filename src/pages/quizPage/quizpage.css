@@ -1,0 +1,159 @@
+.quizpage {
+    background: var(--primary-color);
+    color: #fff;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.quizpage .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.quiz-cat {
+    text-align: center;
+    font-weight: 400;
+    opacity: .6;
+}
+
+.question-block {
+    margin-top: 2rem;
+}
+
+.ques-no {
+    color: var(--button);
+    font-weight: 600;
+}
+
+.question {
+    margin: 1.5rem 0 3rem 0;
+    font-size: 2.5rem;
+    font-weight: 200;
+    opacity: .7;
+}
+
+.quizpage .bottom {
+    margin-top: 4rem;
+}
+
+.answers {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.answer {
+    width: 45%;
+    background-color: #154d8b;
+    padding: 2rem;
+    color: #e0d2d2;
+    margin: 1rem 2rem;
+    margin-left: 0;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    transition: all 500ms ease;
+    box-shadow: inset 0px 0px 5px 1px  var(--button);
+}
+
+.answer.correct {
+    background-color:  green;
+}
+
+.answer.wrong.wrong {
+    background-color:  red;
+}
+
+.answer:hover {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+.answer.correct {
+    background-color: rgb(47, 207, 47);
+    color: #fff;
+}
+
+.answer.wrong {
+    background-color: rgb(145, 39, 39);
+    color: #fff;
+}
+
+.next-btn {
+    color: #fff;
+    width: 6rem;
+    background: var(--button);
+    font-weight: 600;
+    padding:.8rem;
+    margin-top: 2rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: all 500ms ease;
+}
+
+.next-btn:hover {
+    color: var(--button);
+    background: transparent;
+    border-color: var(--button);
+}
+
+.load {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.loading {
+    width: 200px;
+    height: 200px;
+    border: 2px solid transparent;
+    border-right-color: var(--button) ;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+
+    animation: loader;
+    animation-duration: .3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes loader {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+/* MEDIA QUIERY */
+@media screen and (max-width: 600px) {
+    .quiz-cat {
+        font-size: 1rem;
+    }
+
+    .question {
+        margin: 1rem 0 0 0;
+        font-size: 1.5rem;
+    }
+
+    .quizpage .bottom {
+        margin-top: 2rem;
+    }
+
+    .answers {
+        flex-direction: column;
+    }
+
+    .answer {
+        width: 85%;
+        padding: 1.5rem;
+        margin: 1rem 0;
+        text-align: left;
+    }
+}

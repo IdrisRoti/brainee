@@ -1,0 +1,104 @@
+.resultpage {
+    background: url('../../images/pexels-ena-marinkovic-3599208.jpg') no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.overlay {
+    background: rgba(10, 38, 71, .5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.result-card {
+    width: 20rem;
+    height: 25rem;
+    background: var(--primary-color);
+    border-radius: 15px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+.close-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    color: #fff;
+    opacity: .5;
+    transition: all 500ms ease;
+}
+
+.close-btn:hover {
+    color: var(--button);
+}
+
+.resultpage span {
+    color: var(--button);
+}
+
+.resultpage p {
+    color: #fff;
+    margin: 1rem 0;
+}
+
+.result-logo {
+    margin: 3rem 0 2rem 0;
+    font-size: 1.4rem;
+    color: #fff;
+    border: 12px solid rgba(255,0,0,.2);
+    border-radius: 50%;
+}
+
+.result-logo div:first-of-type {
+    padding: 1rem;
+    border: 3px solid #000;
+}
+
+.result-logo div:last-of-type {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: var(--button);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.result-card h3 {
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+}
+
+.result-card h3 b {
+    color: var(--button);
+}
+
+.result-card button {
+    margin-top: 2rem;
+    border: none;
+    outline: 0;
+    background: var(--button);
+    color: #fff;
+    width: 60%;
+    padding: .8rem;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: all 500ms ease;
+}
+
+/* MEDIA QUIERY */
+@media screen and (max-width: 600px) {
+    .result-card {
+        width: 90%;
+    }
+}
